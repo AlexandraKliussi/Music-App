@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Music App</string>
+    <string name="nowPlaying">Now Playing:</string>
+    <string name="previous">Previous</string>
+    <string name="play">Play</string>
+    <string name="stop">Stop</string>
+    <string name="next">Next</string>
+    <string name="songOne">Song One</string>
+    <string name="previousButton">Previous Button</string>
+    <string name="playButton">Play Button</string>
+    <string name="stopButton">Stop Button</string>
+    <string name="nextButton">Next Button</string>
+    <string name="artist">Artist One</string>
+    <string name="songName">Song One</string>
+</resources>
