@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/nowPlaying"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/background">
@@ -10,14 +11,13 @@
         android:orientation="vertical">
 
         <TextView
-            android:id="@+id/nowPlaying"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="@dimen/padding"
             android:text="@string/nowPlaying" />
 
         <TextView
-            android:id="@id/songs"
+            android:id="@id/song"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="@dimen/padding"
@@ -30,18 +30,6 @@
             android:padding="@dimen/padding"
             android:text="@string/artist" />
 
-        <TextView
-            android:id="@+id/songName"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:padding="@dimen/padding" />
-
-        <TextView
-            android:id="@+id/artist"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:padding="@dimen/padding" />
-
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -53,6 +41,7 @@
                 android:id="@+id/previous"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/margin2"
                 android:background="@color/colorAccent"
                 android:contentDescription="@string/previousButton"
                 android:text="@string/previous" />
@@ -61,6 +50,7 @@
                 android:id="@+id/play"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/margin2"
                 android:background="@color/colorAccent"
                 android:contentDescription="@string/playButton"
                 android:text="@string/play" />
@@ -69,6 +59,7 @@
                 android:id="@+id/stop"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/margin2"
                 android:background="@color/colorAccent"
                 android:contentDescription="@string/stopButton"
                 android:text="@string/stop" />

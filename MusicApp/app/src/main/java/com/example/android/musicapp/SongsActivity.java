@@ -15,7 +15,7 @@ public class SongsActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.list);
+        setContentView(R.layout.activity_main);
 
         // Creates a list of words
         ArrayList<Word> words = new ArrayList<Word>();
@@ -38,11 +38,11 @@ public class SongsActivity extends AppCompatActivity {
         // Finds the {@link ListView} object in the view hierarchy of the {@link Activity}.
         // There should be a {@link ListView} with the view ID called list, which is declared in the
         // string list file.
-        ListView listView = (ListView) findViewById(R.id.list);
+        ListView songs = (ListView) findViewById(R.id.list);
 
         // Makes the {@link ListView} use the {@link ListAdapter} created above, so that the
         // {@link ListView} will display list items for each {@link Song} in the list.
-        listView.setAdapter(adapter);
+        songs.setAdapter(adapter);
     }
 }
 

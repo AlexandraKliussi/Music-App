@@ -29,23 +29,23 @@ public class WordAdapter extends ArrayAdapter<Word> {
         View listItemView = convertView;
         if (listItemView == null) {
             listItemView = LayoutInflater.from(getContext()).inflate(
-                    R.layout.list, parent, false);
+                    R.layout.list_item, parent, false);
         }
 
         // Gets the {@link Word} object located at this position in the list
         Word currentWord = getItem(position);
 
         // Finds the TextView in the list.xml layout with the ID version_name
-        TextView songsTextView = (TextView) listItemView.findViewById(R.id.songs);
+        TextView songsTextView = (TextView) listItemView.findViewById(R.id.song);
         // Gets the song name from the current Word object and
         // sets this text on the song TextView
-        songsTextView.setText(currentWord.getSongName());
+        songsTextView.setText(currentWord.getSong());
 
         // Finds the TextView in the list_item.xml layout with the ID version_number
         TextView artistTextView = (TextView) listItemView.findViewById(R.id.artist);
         // Gets the artist name from the current Word object and
         // sets this text on the artist TextView
-        artistTextView.setText(currentWord.getArtistName());
+        artistTextView.setText(currentWord.getArtist());
 
         // Returns the whole list item layout (containing 2 TextViews)
         // so that it can be shown in the ListView

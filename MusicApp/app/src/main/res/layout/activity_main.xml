@@ -1,23 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ListView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/list"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/background"
     android:orientation="vertical"
-    android:padding="16dp">
-
-    <TextView
-        android:id="@+id/songs"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        tools:text="@string/songOne" />
-
-    <TextView
-        android:id="@+id/artist"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:padding="@dimen/padding"
-        android:text="@string/artist" />
-
-</LinearLayout>
+    android:padding="@dimen/padding"
+    tools:context="com.example.android.musicapp.MainActivity"></ListView>

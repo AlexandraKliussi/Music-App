@@ -11,38 +11,38 @@ package com.example.android.musicapp;
 public class Word {
 
     /**
-     * Song Name for the word
+     * Song for the word
      */
-    private String mSongName;
+    private String mSong;
 
     /**
-     * Artist Name for the word
+     * Artist for the word
      */
-    private String mArtistName;
+    private String mArtist;
 
     /**
      * Creates a new Word object.
      *
-     * @param songName   is the Song Name
-     * @param artistName is the Artist Name
+     * @param song   is the Song
+     * @param artist is the Artist
      */
-    public Word(String songName, String artistName) {
-        mSongName = songName;
-        mArtistName = artistName;
+    public Word(String song, String artist) {
+        mSong = song;
+        mArtist = artist;
     }
 
     /**
-     * Gets the song name of the word.
+     * Gets the song of the word.
      */
-    public String getSongName() {
-        return mSongName;
+    public String getSong() {
+        return mSong;
     }
 
     /**
-     * Gets the artist name of the word.
+     * Gets the artist of the word.
      */
-    public String getArtistName() {
-        return mArtistName;
+    public String getArtist() {
+        return mArtist;
     }
 
 }
